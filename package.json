@@ -1,0 +1,21 @@
+{
+  "name": "futures-mtm-ledger",
+  "version": "1.0.0",
+  "description": "期货逐日盯市与保证金账目核验后端（TypeScript + Node.js + SQLite）",
+  "main": "dist/src/cli.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/*.test.js",
+    "start": "npm run build && node dist/src/cli.js serve",
+    "cli": "node dist/src/cli.js",
+    "demo": "npm run build && node dist/scripts/demo.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  }
+}
